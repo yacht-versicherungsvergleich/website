@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 97%;
+    --foreground: 220 15% 15%;
+    --card: 220 15% 100%;
+    --card-foreground: 220 15% 15%;
+    --popover: 220 15% 100%;
+    --popover-foreground: 220 15% 15%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 15% 25%;
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 15% 45%;
+    --accent: 210 100% 95%;
+    --accent-foreground: 210 100% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 85%;
+    --input: 220 15% 85%;
+    --ring: 210 100% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.wave-pattern {
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+              linear-gradient(-45deg, rgba(59, 130, 246, 0.1) 25%, transparent 25%),
+              linear-gradient(45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%),
+              linear-gradient(-45deg, transparent 75%, rgba(59, 130, 246, 0.1) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.ocean-gradient {
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 25%, #1e40af 50%, #1e3a8a 75%, #1e293b 100%);
+}
+
+.yacht-shadow {
+  box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.sail-animation {
+  animation: sail 4s ease-in-out infinite;
+}
+
+@keyframes sail {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
