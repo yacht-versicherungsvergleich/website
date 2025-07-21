@@ -21,55 +21,52 @@ const AGB = ({ onBack }) => {
         </Button>
 
         <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-8">Allgemeine Geschäftsbedingungen (AGB)</h1>
-          
+          <h1 className="text-3xl font-bold text-gray-900 mb-8">
+            Allgemeine Geschäftsbedingungen (AGB)
+          </h1>
+
           <div className="prose prose-lg max-w-none">
             <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 1 Geltungsbereich</h2>
             <p className="text-gray-700 mb-6">
-              Diese Allgemeinen Geschäftsbedingungen gelten für alle Leistungen der Yacht Versicherungsvergleich 
-              im Zusammenhang mit der Vermittlung und dem Vergleich von Yacht-Versicherungen.
+              Diese Allgemeinen Geschäftsbedingungen gelten für die Nutzung des Vergleichsportals für Yachtversicherungen auf dieser Website. Es wird ausdrücklich darauf hingewiesen, dass der Betreiber dieser Seite nicht als Versicherungsmakler tätig ist.
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 2 Leistungen</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 2 Tippgeberfunktion</h2>
             <p className="text-gray-700 mb-6">
-              Wir bieten einen kostenlosen Vergleichsservice für Yacht-Versicherungen an. Unsere Leistungen umfassen:
-            </p>
-            <ul className="list-disc list-inside text-gray-700 mb-6">
-              <li>Vergleich verschiedener Versicherungsangebote</li>
-              <li>Vermittlung von Kontakten zu Versicherungsanbietern</li>
-              <li>Beratung zu Versicherungsoptionen</li>
-              <li>Unterstützung bei der Antragsstellung</li>
-            </ul>
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 3 Kostenpflicht</h2>
-            <p className="text-gray-700 mb-6">
-              Die Nutzung unseres Vergleichsservices ist für Sie kostenfrei. Wir erhalten eine Vergütung von 
-              den Versicherungsanbietern, wenn ein Vertrag über unsere Vermittlung zustande kommt.
+              Der Betreiber dieser Website tritt ausschließlich als Tippgeber auf. Die Versicherungsverträge kommen ausschließlich zwischen dem Nutzer und dem jeweiligen Versicherungsunternehmen zustande.
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 4 Datenschutz</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 3 Leistungen</h2>
             <p className="text-gray-700 mb-6">
-              Ihre Daten werden entsprechend unserer Datenschutzerklärung verarbeitet. Weitere Informationen 
-              finden Sie in unserer separaten Datenschutzerklärung.
+              Die Website bietet eine Übersicht über mögliche Versicherungsangebote für Yachten. Die eingegebenen Daten der Nutzer werden an Kooperationspartner (Versicherungsunternehmen) zur Erstellung von Angeboten weitergeleitet.
+            </p>
+
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 4 Vergütung</h2>
+            <p className="text-gray-700 mb-6">
+              Für die erfolgreiche Weiterleitung von Anfragen an Versicherer erhält der Betreiber dieser Website gegebenenfalls eine Tippgebervergütung. Diese hat keinen Einfluss auf die Darstellung oder Auswahl der Angebote.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 5 Haftung</h2>
             <p className="text-gray-700 mb-6">
-              Wir haften nur für Schäden, die auf Vorsatz oder grobe Fahrlässigkeit zurückzuführen sind. 
-              Eine weitergehende Haftung ist ausgeschlossen, soweit gesetzlich zulässig.
+              Der Betreiber übernimmt keine Haftung für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen. Die Nutzung der Website und der darauf basierenden Empfehlungen erfolgt auf eigene Verantwortung. Eine Haftung für Vermögensschäden ist – soweit gesetzlich zulässig – ausgeschlossen.
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 6 Schlussbestimmungen</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 6 Datenschutz</h2>
             <p className="text-gray-700 mb-6">
-              Es gilt deutsches Recht. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, 
-              bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
+              Die Verarbeitung personenbezogener Daten erfolgt gemäß der gesonderten Datenschutzerklärung dieser Website.
+            </p>
+
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">§ 7 Schlussbestimmungen</h2>
+            <p className="text-gray-700 mb-6">
+              Es gilt deutsches Recht. Sollten einzelne Bestimmungen dieser AGB unwirksam sein oder werden, bleibt die Gültigkeit der übrigen Bestimmungen unberührt.
             </p>
 
             <div className="bg-blue-50 p-6 rounded-lg mt-8">
               <h3 className="font-semibold text-gray-900 mb-2">Kontakt</h3>
               <p className="text-gray-700">
-                Bei Fragen zu diesen AGB erreichen Sie uns unter:<br />
-                E-Mail: info@yacht-versicherungsvergleich.de
+                Tobias Stegmann<br />
+                Am Eisenhammer 6, 63857 Waldaschaff<br />
+                E-Mail: <a href="mailto:admin@yacht-versicherungsvergleich.de">admin@yacht-versicherungsvergleich.de</a>
               </p>
             </div>
           </div>

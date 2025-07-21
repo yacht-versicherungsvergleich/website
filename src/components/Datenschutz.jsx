@@ -22,75 +22,66 @@ const Datenschutz = ({ onBack }) => {
 
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-8">Datenschutzerklärung</h1>
-          
+
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">1. Datenschutz auf einen Blick</h2>
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">Allgemeine Hinweise</h3>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">1. Verantwortlicher</h2>
             <p className="text-gray-700 mb-6">
-              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen 
-              Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, 
-              mit denen Sie persönlich identifiziert werden können.
+              Tobias Stegmann<br />
+              Am Eisenhammer 6<br />
+              63857 Waldaschaff<br />
+              E-Mail: <a href="mailto:admin@yacht-versicherungsvergleich.de">admin@yacht-versicherungsvergleich.de</a>
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">2. Datenerfassung auf unserer Website</h2>
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">Wer ist verantwortlich für die Datenerfassung?</h3>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">2. Welche Daten werden erfasst?</h2>
             <p className="text-gray-700 mb-6">
-              Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. 
-              Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
+              Beim Absenden einer Anfrage über das Vergleichsformular werden personenbezogene Daten wie Name, E-Mail, Telefonnummer sowie Boots- und Versicherungsdaten erhoben. Zusätzlich werden technische Daten (z. B. IP-Adresse, Browser, Betriebssystem) durch unseren Hostinganbieter Hostinger verarbeitet.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">Wie erfassen wir Ihre Daten?</h3>
-            <p className="text-gray-700 mb-4">
-              Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. 
-              Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben.
-            </p>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">3. Zweck der Verarbeitung</h2>
             <p className="text-gray-700 mb-6">
-              Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. 
-              Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+              Die Daten werden verwendet, um passende Versicherungsangebote durch unsere Kooperationspartner bereitzustellen. Eine darüber hinausgehende Nutzung erfolgt nicht.
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">3. Verwendung der Daten</h2>
-            <p className="text-gray-700 mb-4">
-              Wir verwenden Ihre Daten für folgende Zwecke:
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">4. Weitergabe an Dritte</h2>
+            <p className="text-gray-700 mb-6">
+              Die im Formular eingegebenen Daten werden zur Angebotserstellung an kooperierende Versicherungen weitergeleitet. Eine vollständige Liste der Empfänger kann auf Anfrage zur Verfügung gestellt werden.
             </p>
+
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">5. Hosting und IT-Sicherheit</h2>
+            <p className="text-gray-700 mb-6">
+              Diese Website wird von Hostinger (Serverstandort: EU) gehostet. Es besteht ein Vertrag zur Auftragsverarbeitung gem. Art. 28 DSGVO. Die Seite nutzt SSL-Verschlüsselung zur sicheren Datenübertragung.
+            </p>
+
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">6. Rechtsgrundlage</h2>
+            <p className="text-gray-700 mb-6">
+              Die Verarbeitung der personenbezogenen Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b (Vertragsanbahnung) und lit. f (berechtigtes Interesse) DSGVO.
+            </p>
+
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">7. Ihre Rechte</h2>
             <ul className="list-disc list-inside text-gray-700 mb-6">
-              <li>Vermittlung von Versicherungsangeboten</li>
-              <li>Kontaktaufnahme durch Versicherungsanbieter</li>
-              <li>Verbesserung unserer Dienstleistungen</li>
-              <li>Einhaltung gesetzlicher Verpflichtungen</li>
+              <li>Auskunft über gespeicherte Daten (Art. 15 DSGVO)</li>
+              <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+              <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+              <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+              <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+              <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
             </ul>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">4. Ihre Rechte</h2>
-            <p className="text-gray-700 mb-4">
-              Sie haben jederzeit das Recht:
-            </p>
-            <ul className="list-disc list-inside text-gray-700 mb-6">
-              <li>unentgeltlich Auskunft über Ihre gespeicherten personenbezogenen Daten</li>
-              <li>Berichtigung unrichtiger Daten</li>
-              <li>Löschung Ihrer bei uns gespeicherten Daten</li>
-              <li>Einschränkung der Datenverarbeitung</li>
-              <li>Datenübertragbarkeit</li>
-            </ul>
-
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">5. Cookies</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">8. Cookies & Analyse</h2>
             <p className="text-gray-700 mb-6">
-              Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner 
-              keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, 
-              effektiver und sicherer zu machen.
+              Derzeit werden keine Tracking- oder Analyse-Dienste eingesetzt. Es werden lediglich technisch notwendige Cookies verwendet.
             </p>
 
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">6. SSL-Verschlüsselung</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">9. Speicherdauer</h2>
             <p className="text-gray-700 mb-6">
-              Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte 
-              eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile 
-              des Browsers von "http://" auf "https://" wechselt.
+              Ihre Daten werden nur solange gespeichert, wie dies zur Bearbeitung Ihrer Anfrage erforderlich ist oder gesetzliche Aufbewahrungspflichten bestehen.
             </p>
 
             <div className="bg-blue-50 p-6 rounded-lg mt-8">
-              <h3 className="font-semibold text-gray-900 mb-2">Kontakt zum Datenschutzbeauftragten</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Kontakt zum Datenschutz</h3>
               <p className="text-gray-700">
-                Bei Fragen zum Datenschutz erreichen Sie uns unter:<br />
-                E-Mail: datenschutz@yacht-versicherungsvergleich.de
+                Bei Fragen zum Datenschutz wenden Sie sich bitte an:<br />
+                E-Mail: <a href="mailto:admin@yacht-versicherungsvergleich.de">admin@yacht-versicherungsvergleich.de</a>
               </p>
             </div>
           </div>
