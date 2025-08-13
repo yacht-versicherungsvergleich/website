@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Toaster } from '@/components/ui/toaster';
@@ -23,9 +22,9 @@ function App() {
     const handleHashChange = () => {
       const hash = window.location.hash.substring(1);
       if (['agb', 'datenschutz', 'impressum'].includes(hash)) {
-        setCurrentPage(hash);
+	setCurrentPage(hash);
       } else {
-        setCurrentPage('home');
+	setCurrentPage('home');
       }
     };
 
@@ -46,34 +45,34 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'agb':
-        return <AGB onBack={handleBackToHome} />;
+	return <AGB onBack={handleBackToHome} />;
       case 'datenschutz':
-        return <Datenschutz onBack={handleBackToHome} />;
+	return <Datenschutz onBack={handleBackToHome} />;
       case 'impressum':
-        return <Impressum onBack={handleBackToHome} />;
+	return <Impressum onBack={handleBackToHome} />;
       default:
-        return (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-          >
-            <HeroSection onStartComparison={handleStartComparison} />
-            <FeaturesSection appName={APP_NAME} />
-            <BenefitsSection onStartComparison={handleStartComparison} />
-            <ProvidersSection />
-            <CtaSection onStartComparison={handleStartComparison} />
-            <Footer logoUrl={LOGO_URL} appName={APP_NAME} />
-          </motion.div>
-        );
+	return (
+	  <motion.div
+	    initial={{ opacity: 0 }}
+	    animate={{ opacity: 1 }}
+	  >
+	    <HeroSection onStartComparison={handleStartComparison} />
+	    <FeaturesSection appName={APP_NAME} />
+	      <BenefitsSection onStartComparison={handleStartComparison} />
+	      {/*}<ProvidersSection />{*/}
+	    <CtaSection onStartComparison={handleStartComparison} />
+	    <Footer logoUrl={LOGO_URL} appName={APP_NAME} />
+	  </motion.div>
+	);
     }
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
       <Toaster />
-      
+
       {currentPage === 'home' && <Navbar logoUrl={LOGO_URL} appName={APP_NAME} />}
-      
+
       {renderPage()}
     </div>
   );
